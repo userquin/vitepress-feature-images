@@ -19,22 +19,14 @@ defineProps<{
   link?: stringv
   linkText?: string
 }>()
-const imgDescriptions: Record<string, { alt: string }> = { 
-  '/vitepress.svg': { alt: 'VitePress Logo' },
-  '/vite.svg': { alt: 'Vite Logo' },
-  '/vitest.svg': { alt: 'Vitest Logo' }
-}
 </script>
 
 <template>
   <VPLink class="VPFeature" :href="link" :no-icon="true">
     <article class="box">
-      <img v-if="icon" :src="icon" width="48" height="48" :title="imgDescriptions[icon].alt">
-<!--
-      <img v-if="icon === 'vitepress.svg'" src="/vitepress.svg" width="48" height="48" title="VitePress Logo">
-      <img v-if="icon === 'vite.svg'" src="/vite.svg" width="48" height="48" title="Vite Logo">
-      <img v-if="icon === 'vitest.svg'" src="/vitest.svg" width="48" height="48" title="Vitest Logo">
--->      
+      <img v-if="icon === '/iOS.svg'" src="/iOS.svg" width="98" height="48" title="VitePress Logo">
+      <img v-if="icon === '/Android.svg'" src="/Android.svg" width="313" height="48" title="Vite Logo">
+      <img v-if="icon === '/Windows.svg'" src="/Windows.svg" width="228" height="48" title="Vitest Logo">
       <h2 class="title">{{ title }}</h2>
       <p class="details">{{ details }}</p>
 

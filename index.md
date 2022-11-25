@@ -14,15 +14,15 @@ hero:
         link: https://github.com/vuejs/vitepress
 
 features:
-  - icon: /vitepress.svg
-    title: VitePress
-    details: VitePress details...
-  - icon: /vite.svg
-    title: Vite
-    details: Vite details...
-  - icon: /vitest.svg
-    title: Vitest
-    details: Vitest details...
+  - icon: /iOS.svg
+    title: App for iOS
+    details: iOS details...
+  - icon: /Android.svg
+    title: App for Android
+    details: Android details...
+  - icon: /Windows.svg
+    title: App for Windows
+    details: Windows details...
 
 ---
 
